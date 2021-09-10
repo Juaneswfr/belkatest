@@ -1,0 +1,59 @@
+
+/*-----------------------------------------------------------------------------
+
+    - ESTILOS GENERALES -
+
+date:      	09/09/21
+author:		Jera Code
+email:     	juanestebanramirezavila@gmail.com
+-----------------------------------------------------------------------------*/
+
+/*************************
+        -FUENTES-
+**************************/
+
+
+
+/*************************
+        -ROOT-
+**************************/
+:root{
+	--bg-color1: #FFEF20;
+	--bg-color2: #B118FF;
+}
+
+/*************************
+        -MAIN-
+**************************/
+*{font-family: 'Rubik', sans-serif; color:#222;}
+p{font-size: 1.5rem;}
+
+.bg-yellow{background: var(--bg-color1);}
+
+/* HEADER */
+header nav.navbar{padding-top: 3rem; align-items: flex-start;}
+header nav .nav-link{color: #222; font-weight: 700; transition: .4s all;}
+header nav .nav-link:hover{color: #555;}
+header nav .nav-item{margin: 0px 10px;}
+.container-person{margin: 0;}
+.container-person img{max-width: 100%;width: 100%;}
+.main-logo img{max-width: 270px;}
+.link_login{padding: .5rem; border-radius: 3px; border: 1px solid black; margin-left: 20px; transition: .4s all;}
+.link_login:hover{background: white; border-color: white;}
+
+/* TITLES */
+.wrap_title h2{text-transform: initial;font-weight:700; font-size: 2.5rem; }
+
+
+/* HOME SECTION LETS GO*/
+#wrap_lets_go{position: relative;}
+#wrap_lets_go .form-container{ position: absolute; height: auto; z-index: 1; padding: 2rem;width: 100%;}
+#wrap_lets_go::before{position: absolute; content: ''; background: var(--bg-color1); width: 50vw; bottom: 0; z-index: 1;right: 0; height: 30%;bottom: -30%;}
+.form-home form{ border-radius: 10px; overflow: hidden;max-width: 350px;margin: auto;}
+.form-home .form-control{border-radius: 0; border: 0; border-bottom: 1px solid #999;}
+.form-home .form-control:focus{box-shadow: unset; border-bottom: 1px solid var(--bg-color1);}
+.form-home  button{width: 100%; background: var(--bg-color2); border-top-left-radius: 0;border-top-right-radius: 0; font-size: 1.4rem; font-weight: 700; padding:1rem; color:white ; margin: 0;}
+.form-home  button:hover{color: var(--bg-color1); background:black;}
+
+/* HOME SECTION LETS GO*/
+#wrap_courses{position: relative; padding: 4rem 0px;}
