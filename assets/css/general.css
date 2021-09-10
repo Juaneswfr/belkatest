@@ -20,6 +20,7 @@ email:     	juanestebanramirezavila@gmail.com
 :root{
 	--bg-color1: #FFEF20;
 	--bg-color2: #B118FF;
+        --bg-color3: #ffe700;
 }
 
 /*************************
@@ -27,8 +28,10 @@ email:     	juanestebanramirezavila@gmail.com
 **************************/
 *{font-family: 'Rubik', sans-serif; color:#222;}
 p{font-size: 1.5rem;}
+a{color: var(--bg-color1);}
+a:hover{text-decoration: unset; color: var(--bg-color1);}
 
-.bg-yellow{background: var(--bg-color1);}
+.bg-yellow{background: linear-gradient(45deg, var(--bg-color3), var(--bg-color1))}
 
 /* HEADER */
 header nav.navbar{padding-top: 3rem; align-items: flex-start;}
@@ -37,18 +40,20 @@ header nav .nav-link:hover{color: #555;}
 header nav .nav-item{margin: 0px 10px;}
 .container-person{margin: 0;}
 .container-person img{max-width: 100%;width: 100%;}
-.main-logo img{max-width: 270px;}
+.main-logo img{max-width: 320px;}
 .link_login{padding: .5rem; border-radius: 3px; border: 1px solid black; margin-left: 20px; transition: .4s all;}
-.link_login:hover{background: white; border-color: white;}
+.link_login:hover{background: var(--bg-color2); color: white !important; border-color: var(--bg-color2);}
 
 /* TITLES */
-.wrap_title h2{text-transform: initial;font-weight:700; font-size: 2.5rem; }
+.wrap_title h2{text-transform: initial;font-weight:700; font-size: 2.5rem; margin: 0;}
+.wrap_title span.arrow {display: block; text-align: right;}
+.wrap_title span.arrow svg{max-width: 100px;}
 
 
 /* HOME SECTION LETS GO*/
-#wrap_lets_go{position: relative;}
+#wrap_lets_go{position: relative; background: linear-gradient(45deg, var(--bg-color3), var(--bg-color1))}
 #wrap_lets_go .form-container{ position: absolute; height: auto; z-index: 1; padding: 2rem;width: 100%;}
-#wrap_lets_go::before{position: absolute; content: ''; background: var(--bg-color1); width: 50vw; bottom: 0; z-index: 1;right: 0; height: 30%;bottom: -30%;}
+#wrap_lets_go::before{position: absolute; content: ''; background: linear-gradient(45deg, var(--bg-color3), var(--bg-color1)); width: 50vw; bottom: 0; z-index: 1;right: 0; height: 30%;bottom: -30%;}
 .form-home form{ border-radius: 10px; overflow: hidden;max-width: 350px;margin: auto;}
 .form-home .form-control{border-radius: 0; border: 0; border-bottom: 1px solid #999;}
 .form-home .form-control:focus{box-shadow: unset; border-bottom: 1px solid var(--bg-color1);}
@@ -57,3 +62,32 @@ header nav .nav-item{margin: 0px 10px;}
 
 /* HOME SECTION LETS GO*/
 #wrap_courses{position: relative; padding: 4rem 0px;}
+#wrap_courses .container-item .item{background-color: transparent; transition: .4s all;padding: 1rem;}
+#wrap_courses .container-item .item:hover{background-color: var(--bg-color2); transition: .4s all; border-radius: 10px; overflow: hidden; box-shadow: 3px 1px 12px 4px #57595a69;}
+#wrap_courses .container-item .item .container-icon{background-color: var(--bg-color1);padding: 20px 10px;transform: skewX(350deg);border-radius: 25px; transition: .4s all;    max-width: 90%;margin: auto;}
+#wrap_courses .container-item .item:hover .container-icon{background-color: var(--bg-color2);padding: 20px 10px;transform: skewX(350deg);border-radius: 25px; transition: .4s all;}
+#wrap_courses .container-item .item figcaption .title-item{font-weight: 700; font-size: 1.4rem; text-align: center; transition: .4s all;}
+#wrap_courses .container-item .item figcaption span{text-align: center; transition: .4s all;}
+#wrap_courses .container-item .item:hover figcaption .title-item{color: white;}
+#wrap_courses .container-item .item:hover figcaption span{color: white;}
+#wrap_courses .container-item .item figcaption {padding: 15px 10px;}
+#wrap_courses .container-item .item .container-icon .svg-icon{display: flex; max-width: 150px; margin: auto; transform: skew(10deg);}
+#wrap_courses .container-item .item .container-icon .svg-icon path{fill: #050505; transition: .4s all;}
+#wrap_courses .container-item .item:hover .container-icon .svg-icon path{fill: white;}
+
+
+#wrap-newsletter{background: white url('/assets/media/back-newsletter.png') no-repeat center / 100% ; padding: 5rem 20px;  display: flex; justify-content: center; align-items: center;}
+#wrap-newsletter .container{padding: 300px 0;}
+#wrap-newsletter .container .container-form{max-width: 500px; margin: auto; padding: 10px 20px; background:var(--bg-color1); border-radius: 10px;}
+
+#wrap-newsletter .container-form .form-control{border-radius: 0; border: 0; border-bottom: 0; background: transparent; font-size: 1.3rem; font-style: italic;}
+#wrap-newsletter .container-form button{padding: 15px 5px; border-radius: 10px; background: white; width: 100%; transition: .4s all; font-weight: 700; font-size: 1.2rem;}
+#wrap-newsletter .container-form .form-control::placeholder{color: black;}
+#wrap-newsletter .container-form .form-control:focus{box-shadow: unset; border-bottom: 0;}
+
+footer{background-color: black;}
+footer{ padding: 4rem 4rem; }
+footer p{color: white;}
+footer .main_link{ font-size: 1.4rem; font-weight: 700; display: flex; margin-bottom: 5rem;   width: max-content;}
+footer .footer-list{ list-style-type: none; padding: 0;}
+footer .footer-list li a{color: white; margin: 10px 0; display: flex; font-size: 1.4rem;    width: max-content;}
