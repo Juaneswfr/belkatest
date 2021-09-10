@@ -1,6 +1,6 @@
 <?php
 session_start();
 
-$title = 'Partners';
+$title = 'Fajitex | ¡Qué bien te ves!';
 
 ?>

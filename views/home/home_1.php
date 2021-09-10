@@ -34,12 +34,20 @@
                                 </div>
                                 <div class="mb-3 form-group">
                                     <div class="col-sm-12">
-                                        <input type="text" class="form-control" name="apellidos" placeholder="Apellido">
+                                        <input type="text" class="form-control" name="celular" placeholder="Celular">
                                     </div>
                                 </div>
                                 <div class="mb-3 form-group">
                                     <div class="col-sm-12">
-                                        <input type="text" class="form-control" name="nombre" placeholder="Correo electrónico">
+                                        <select name="curso" class="form-control select2">
+                                            <option value="">Curso de interés</option>
+                                            <option value="Desarrollo">Desarrollo</option>
+                                            <option value="Marketing">Marketing</option>
+                                            <option value="E-commerce">E-commerce</option>
+                                            <option value="Estrategia Digital">Estrategia Digital</option>
+                                            <option value="Negocios Digitales">Negocios Digitales</option>
+                                            <option value="Diseño">Diseño</option>
+                                        </select>
                                         <small>* Todos los campos son requeridos</small>
                                     </div>
                                     
@@ -263,12 +271,66 @@
     </div>
 </section>
 
+
+<section id="wrap-blog">
+    <div class="container">
+        <div class="wrap_title">
+            <h2 class="text-center font-weight-bold">Explora nuestro blog</h2>
+        </div>
+
+        <div class="container-blog row" >
+            <?php 
+
+            $url = "https://hnrss.org/newest";
+            $xml = simplexml_load_file($url , 'SimpleXMLElement', LIBXML_NOCDATA);
+            $xmlArray = [];
+
+
+            for ($i = 0; $i < 3; $i++) {
+                $xmlArray = $xml->channel->item[$i];
+            ?>
+            <div class="col-md-4">
+                <a href="<?= $xmlArray->link ?>" target="_blank" class="item">
+                    <figure>
+                        <div class="container-image">
+                            <img src="/assets/media/blog-<?=$i?>.jpg" width="auto" height="auto" alt="<?= $xmlArray->title ?> " class="ls-is-cached lazyloaded">
+                            <div class="opacity">
+                                <div class="opacity-text">
+                                    Ver
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="lead">
+                            <div class="autor">
+                                <span>
+                                    <img src="/assets/media/autor-blog-<?=$i?>.png" alt="">
+                                </span>
+                                <div>
+                                    <p class="name-autor">Tomas Aria</p>
+                                    <p>Lorem, ipsum dolor.</p>
+                                </div>
+                            </div>
+                            <small><?= $xmlArray->pubDate ?></small>
+                            <h3>
+                                <?= $xmlArray->title ?>
+                            </h3>
+                        </figcaption>
+                    </figure>              
+                </a>
+            </div>
+
+            <?php } ?>
+
+        </div>
+    </div>
+</section>
+
 <section id="wrap-newsletter">
 <div class="container">
     <div class="wrap_title">
         <h2 class="text-center font-weight-bold mb-5">Aprende desde cero</h2>
     </div>
-    <p class="text-center">Lorem ipsum dolor sit.</p>
+    <p class="text-center mb-5">Lorem ipsum dolor sit.</p>
 
     <div class="container-form">
         <form action="/newsletter">

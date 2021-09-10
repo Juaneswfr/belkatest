@@ -13,16 +13,18 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
         <meta name="keywords" content="">
         <meta charset="utf-8">
         <meta name="author" content="Jera Code">
+        <meta property="og:locale" content="es_CO">
+        <meta name="robots" content= "index, follow">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <meta name="description" content="Dentiarte">  
+        <meta name="description" content="Encuentra las mejores fajas para mujer y hombre ideales para cualquier ocasión: de uso diario, para moldear, post quirúrgicas y mucho más.">  
         
-        <!-- SEO -->
-        <meta property="og:description" content="Dentiarte clinica y laboratorio dental">
-        <meta property="og:url" content="https://dentiarte.com/">
+        <!-- METAS OPEN GRAPH -->
+        <meta property="og:description" content="Encuentra las mejores fajas para mujer y hombre ideales para cualquier ocasión: de uso diario, para moldear, post quirúrgicas y mucho más.">
+        <meta property="og:url" content="https://test-mas-que-partners.herokuapp.com/">
         <meta property="og:locale" content="es_CO" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://dentiarte.com/assets/media/svg/logo_dentiarte_text.svg">
-        <meta property="og:site_name" content="Detiarte Clinica Laboratorio" />
+        <meta property="og:image" content="https://test-mas-que-partners.herokuapp.com/assets/media/svg/logo_dentiarte_text.svg">
+        <meta property="og:site_name" content="Fajitex | ¡Qué bien te ves!" />
         
         <!-- favicon -->
         <link rel="icon" type="image/png" href="/assets/media/svg/favicon.svg">
@@ -42,6 +44,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
         <link rel="stylesheet" href="/assets/css/animate.css" />
 
         <!-- PLUGINS -->
+        <link href="/assets/plugins/select2/select2.min.css" rel="stylesheet" />
         <!-- general -->
         <link rel="stylesheet" href="/assets/css/general.css" />
     </head>
@@ -62,9 +65,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
         <!-- javascript libraries / javascript files set #1 --> 
         <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.js"></script> 
-        
+      
         <!-- PLUGINS -->
-        <script type="text/javascript" src="/assets/js/wow.js"></script>
+        <script src="/assets/plugins/select2/select2.min.js"></script>
+        <script type="text/javascript" src="/assets/js/lazysizes.min.js"></script>
+        <script type="text/javascript" src="/assets/js/wow.min.js"></script>
         <!-- setting -->
         <script type="text/javascript" src="/assets/js/general.js"></script>
 </body>
