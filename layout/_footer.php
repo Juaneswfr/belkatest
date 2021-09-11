@@ -58,7 +58,7 @@
                             <a href="/oficina">Oficina</a>
                         </li>
                         <li>
-                            <a href="/centro-de-Ayuda">Centro de Ayuda</a>
+                            <a href="/centro-de-ayuda">Centro de Ayuda</a>
                         </li>
                         <li>
                             <a href="/programa-partners">Programa Partners</a>
@@ -93,7 +93,7 @@
         </div>
     </section>
     <section id="wrap_links_footer" class="container  container-center d-flex flex-wrap justify-content-between align-items-end">
-        <a class="main-logo">
+        <a class="main-logo wow animated fadeIn" href="/">
             <img src="/assets/media/logo-yellow.png" alt="Más que partners">
         </a>
         <div class="ml-auto">

@@ -6,31 +6,30 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
 ?>
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
     <head>
         <!-- title -->
         <title><?= $title ?></title>
-        <meta name="keywords" content="">
+        <meta name="keywords" content="<?= $keywords?>">
         <meta charset="utf-8">
         <meta name="author" content="Jera Code">
-        <meta property="og:locale" content="es_CO">
         <meta name="robots" content= "index, follow">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <meta name="description" content="Encuentra las mejores fajas para mujer y hombre ideales para cualquier ocasión: de uso diario, para moldear, post quirúrgicas y mucho más.">  
+        <meta name="description" content="<?= $description ?>">  
         
         <!-- METAS OPEN GRAPH -->
-        <meta property="og:description" content="Encuentra las mejores fajas para mujer y hombre ideales para cualquier ocasión: de uso diario, para moldear, post quirúrgicas y mucho más.">
+        <meta property="og:description" content="<?= $description ?>">
         <meta property="og:url" content="https://test-mas-que-partners.herokuapp.com/">
         <meta property="og:locale" content="es_CO" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://test-mas-que-partners.herokuapp.com/assets/media/svg/logo_dentiarte_text.svg">
-        <meta property="og:site_name" content="Fajitex | ¡Qué bien te ves!" />
+        <meta property="og:site_name" content="<?= $title ?>" />
         
         <!-- favicon -->
-        <link rel="icon" type="image/png" href="/assets/media/svg/favicon.svg">
-        <link rel="apple-touch-icon" href="/assets/media/svg/favicon.svg">
-        <link rel="apple-touch-icon" sizes="72x72" href="/assets/media/svg/favicon.svg">
-        <link rel="apple-touch-icon" sizes="114x114" href="/assets/media/svg/favicon.svg">
+        <link rel="icon" type="image/png" href="/assets/media/favicon.png">
+        <link rel="apple-touch-icon" href="/assets/media/favicon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/assets/media/favicon.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/assets/media/favicon.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +46,32 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
         <link href="/assets/plugins/select2/select2.min.css" rel="stylesheet" />
         <!-- general -->
         <link rel="stylesheet" href="/assets/css/general.css" />
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5WDQDS3');</script>
+        <!-- End Google Tag Manager -->
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL9MT5LPW2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HL9MT5LPW2');
+        </script>
+        
     </head>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WDQDS3"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        
+
 <body>
 
         <?php
@@ -70,8 +94,18 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
         <script src="/assets/plugins/select2/select2.min.js"></script>
         <script type="text/javascript" src="/assets/js/lazysizes.min.js"></script>
         <script type="text/javascript" src="/assets/js/wow.min.js"></script>
+
+        <script>
+              new WOW().init();
+              </script>
+
+
         <!-- setting -->
         <script type="text/javascript" src="/assets/js/general.js"></script>
+
+        
 </body>
+
+
 
 </html>

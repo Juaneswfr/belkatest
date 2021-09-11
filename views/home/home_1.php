@@ -4,17 +4,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 center-col">
-                <figure class="container-person wow animated bounceInLeft">
+                <figure class="container-person animated bounceInLeft">
                     <img src="/assets/media/persona-1.png" alt="Vista previa de archivo svg">
                 </figure>
             </div>
             <div class="col-12 col-md-6 position-relative ">
-                <div class="form-container  bg-yellow">
+                <div class="form-container  bg-yellow animated fadeIn">
                     <div class="wrap_title">
                         <h2 class="text-center font-weight-bold mb-5">Comencemos juntos<br> tu formación</h2>
                     </div>
-                    <div class="form-home">
-                        <form action="/send-info" method="post" autocomplete="off">
+                    <div class="form-home ">
+                        <form action="/send_data" method="post" autocomplete="off" enctype="multipart/form-data" novalidate="novalidate">
 
                             <div class="bg-white px-3 py-4">
                                 <div class="mb-3 form-group">

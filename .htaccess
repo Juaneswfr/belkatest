@@ -71,4 +71,5 @@ RewriteRule ^404$ index.php?template_url=templates/404.php&option=error[L]
 #HOME
 RewriteRule ^home$ index.php?template_url=home/home_1.php&option=home [L]
 RewriteRule ^$ index.php?template_url=home/home_1.php&option=home [L]
-RewriteRule ^member-card$ index.php?template_url=templates/member_card.php&option=home [L]
+RewriteRule ^send_data$ component/send_mail.php&option=send_info [L]
+RewriteRule ^como-surgieron-las-fajas-y-cual-es-su-relacion-con-el-corse$ index.php?template_url=templates/blog.php&option=blog [L]
