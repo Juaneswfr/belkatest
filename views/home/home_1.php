@@ -14,7 +14,7 @@
                         <h2 class="text-center font-weight-bold mb-5">Comencemos juntos<br> tu formación</h2>
                     </div>
                     <div class="form-home ">
-                        <form action="/send_data" method="post" autocomplete="off" enctype="multipart/form-data" novalidate="novalidate">
+                        <form  id="form-home" method="post" autocomplete="off" enctype="multipart/form-data" novalidate="novalidate">
 
                             <div class="bg-white px-3 py-4">
                                 <div class="mb-3 form-group">
@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="mb-3 form-group">
                                     <div class="col-sm-12">
-                                        <input type="text" class="form-control" name="celular" placeholder="Celular">
+                                        <input type="number" class="form-control" name="celular" placeholder="Celular">
                                     </div>
                                 </div>
                                 <div class="mb-3 form-group">

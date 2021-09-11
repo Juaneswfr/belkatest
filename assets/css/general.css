@@ -32,6 +32,12 @@ a{color: var(--bg-color1);}
 a:hover{text-decoration: unset; color: var(--bg-color1);}
 
 .bg-yellow{background: linear-gradient(45deg, var(--bg-color3), var(--bg-color1))}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
+
+/* Firefox */
+input[type=number] {-moz-appearance: textfield;}
 
 /* HEADER */
 header nav.navbar{padding-top: 3rem; align-items: flex-start;padding-bottom: 1.4rem;}
@@ -56,13 +62,18 @@ header nav .nav-item{margin: 0px 10px;}
 #wrap_lets_go::before{position: absolute; content: ''; background: linear-gradient(45deg, var(--bg-color3), var(--bg-color1)); width: 50vw; bottom: 0; z-index: 1;right: 0; height: 30%;bottom: -30%;}
 .form-home form{ border-radius: 10px; overflow: hidden;max-width: 450px;margin: auto;}
 .form-home .form-control{border-radius: 0; border: 0; border-bottom: 1px solid #999;}
+.form-home .form-control.error{border-bottom: 1px solid red;}
 .form-home .form-control:focus{box-shadow: unset; border-bottom: 1px solid var(--bg-color1);}
 .form-home  button{width: 100%; background: var(--bg-color2); border-top-left-radius: 0;border-top-right-radius: 0; font-size: 1.4rem; font-weight: 700; padding:1rem; color:white ; margin: 0;}
 .form-home  button:hover{color: var(--bg-color1); background:black;}
+
+.form-home .form-control.error ~ .select2-container{border-bottom: 1px solid red;}
 .form-home .select2-selection{ border :0 ;border:0;; border-radius: 0;}
 .form-home .select2-container{color: #495057; padding:8px 0;border-bottom: 1px solid #999}
 .form-home .select2-container--default .select2-selection--single .select2-selection__rendered{color: #495057;}
 .form-home small{margin-top: 10px; font-style: italic;display: block;}
+
+
 /* HOME SECTION LETS GO*/
 #wrap_courses{position: relative; padding: 4rem 0px;}
 #wrap_courses .container-item .item{background-color: transparent; transition: .4s all;padding: 1rem;}
