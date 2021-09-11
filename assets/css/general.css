@@ -74,6 +74,17 @@ header nav .nav-item{margin: 0px 10px;}
 .form-home small{margin-top: 10px; font-style: italic;display: block;}
 
 
+/*MESSAGE ALERT FORM NEWSLETTER REGISTER*/
+
+.modal-alert-custom .modal-header{border-bottom: 0; background-color: black;}
+.modal-alert-custom .modal-body{border-bottom: 0; background-color: black;}
+.modal-alert-custom .modal-body *{color: white;}
+.modal-alert-custom .modal-body p{font-size: 1.2rem;}
+.modal-alert-custom .modal-header .close span{color: var(--bg-color1);}
+.modal-alert-custom .modal-body h5{color: white; text-align: center;}
+.modal-alert-custom .modal-body span {color: white; text-align: center; display: block; margin: 1rem 0px;}
+.modal-alert-custom .modal-body span i{color: var(--bg-color1); font-size: 8rem;}
+
 /* HOME SECTION LETS GO*/
 #wrap_courses{position: relative; padding: 4rem 0px;}
 #wrap_courses .container-item .item{background-color: transparent; transition: .4s all;padding: 1rem;}

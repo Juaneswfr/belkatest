@@ -8,6 +8,8 @@
                     <img src="/assets/media/persona-1.png" alt="Vista previa de archivo svg">
                 </figure>
             </div>
+
+            <script src="https://www.google.com/recaptcha/api.js?render=6LeoyzsaAAAAAKMufPCh7Js18n3y8v9xjQCSFgrB"></script>
             <div class="col-12 col-md-6 position-relative ">
                 <div class="form-container  bg-yellow animated fadeIn">
                     <div class="wrap_title">
@@ -17,46 +19,52 @@
                         <form  id="form-home" method="post" autocomplete="off" enctype="multipart/form-data" novalidate="novalidate">
 
                             <div class="bg-white px-3 py-4">
-                                <div class="mb-3 form-group">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                                    <div class="mb-3 form-group">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3 form-group">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control" name="apellidos" placeholder="Apellido">
+                                    <div class="mb-3 form-group">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" name="apellidos" placeholder="Apellido">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3 form-group">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control" name="email" placeholder="Correo electrónico">
+                                    <div class="mb-3 form-group">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" name="email" placeholder="Correo electrónico">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3 form-group">
-                                    <div class="col-sm-12">
-                                        <input type="number" class="form-control" name="celular" placeholder="Celular">
+                                    <div class="mb-3 form-group">
+                                        <div class="col-sm-12">
+                                            <input type="number" class="form-control" name="celular" placeholder="Celular">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3 form-group">
-                                    <div class="col-sm-12">
-                                        <select name="curso" class="form-control select2">
-                                            <option value="">Curso de interés</option>
-                                            <option value="Desarrollo">Desarrollo</option>
-                                            <option value="Marketing">Marketing</option>
-                                            <option value="E-commerce">E-commerce</option>
-                                            <option value="Estrategia Digital">Estrategia Digital</option>
-                                            <option value="Negocios Digitales">Negocios Digitales</option>
-                                            <option value="Diseño">Diseño</option>
-                                        </select>
-                                        <small>* Todos los campos son requeridos</small>
+                                    <div class="mb-3 form-group">
+                                        <div class="col-sm-12">
+                                            <select name="curso" class="form-control select2">
+                                                <option value="">Curso de interés</option>
+                                                <option value="Desarrollo">Desarrollo</option>
+                                                <option value="Marketing">Marketing</option>
+                                                <option value="E-commerce">E-commerce</option>
+                                                <option value="Estrategia Digital">Estrategia Digital</option>
+                                                <option value="Negocios Digitales">Negocios Digitales</option>
+                                                <option value="Diseño">Diseño</option>
+                                            </select>
+                                            <small>* Todos los campos son requeridos</small>
+                                        </div>
+                                        
                                     </div>
-                                    
-                                </div>
                             </div>
-
+                            <input name="token" type="hidden" id="token"/>
                             <button type="submit" class="btn mb-2"> COMIENZA AHORA</button>
                             
-                            
+                            <script>
+                            grecaptcha.ready(function() {
+                                grecaptcha.execute('6LeoyzsaAAAAAKMufPCh7Js18n3y8v9xjQCSFgrB', {action: 'homepage'}).then(function(token) {
+                                    document.getElementById("token").value= token;
+                                });
+                            });</script>
+
                         </form>
                     </div>
                 </div>
@@ -326,24 +334,42 @@
 </section>
 
 <section id="wrap-newsletter">
-<div class="container">
-    <div class="wrap_title">
-        <h2 class="text-center font-weight-bold mb-5">Aprende desde cero</h2>
-    </div>
-    <p class="text-center mb-5">Lorem ipsum dolor sit.</p>
+    <div class="container">
+        <div class="wrap_title">
+            <h2 class="text-center font-weight-bold mb-5">Aprende desde cero</h2>
+        </div>
+        <p class="text-center mb-5">Lorem ipsum dolor sit.</p>
 
-    <div class="container-form">
-        <form action="/newsletter">
-            <div class="row align-items-center">
-                <div class="col-8">
-                    <input type="text" class="form-control" name="email" placeholder="Correo electrónico">
+        <div class="container-form">
+            <form action="/newsletter">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <input type="text" class="form-control" name="email" placeholder="Correo electrónico">
+                    </div>
+                    <div class="col-4">
+                        <button type="submit" class="btn mb-2"><span></span> Suscríbete</button>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <button type="submit" class="btn mb-2"><span></span> Suscríbete</button>
-                </div>
-            </div>
-        </form>
+            </form>
 
+        </div>
     </div>
-</div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade modal-alert-custom" id="modalAlert" tabindex="-1" role="dialog" aria-labelledby="modalAlertTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5 class="modal-title" id="modalAlertTitle">¡Información enviada correctamente!</h5>
+        <span class="animated fadeIn" id="modalAlertIcon"><i class="fas  fa-check-circle mr-2"></i> </span>
+        <p id="modalAlertContent" class="text-center h5">Tu información se ha enviado correctamente, pronto nos pondremos en contacto contigo</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -19,10 +19,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
         
         <!-- METAS OPEN GRAPH -->
         <meta property="og:description" content="<?= $description ?>">
-        <meta property="og:url" content="https://test-mas-que-partners.herokuapp.com/">
+        <meta property="og:url" content="<?= $url ?>">
         <meta property="og:locale" content="es_CO" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://test-mas-que-partners.herokuapp.com/assets/media/svg/logo_dentiarte_text.svg">
+        <meta property="og:image" content="<?= $image ?>">
         <meta property="og:site_name" content="<?= $title ?>" />
         
         <!-- favicon -->
@@ -63,6 +63,28 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
 
         gtag('config', 'G-HL9MT5LPW2');
         </script>
+
+        <!-- javascript libraries / javascript files set #1 --> 
+        <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+        <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.js"></script> 
+      
+        <!-- PLUGINS -->
+        <script src="/assets/plugins/select2/select2.min.js"></script>
+        <script src="https://kit.fontawesome.com/484506fb6d.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/assets/js/send-data.js"></script>
+        <script type="text/javascript" src="/assets/js/wow.min.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
+
+
+        <!-- setting -->
+        <script type="text/javascript" src="/assets/js/general.js"></script>
+
+
         
     </head>
         <!-- Google Tag Manager (noscript) -->
@@ -85,25 +107,6 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
 
         ?>
 
-
-        <!-- javascript libraries / javascript files set #1 --> 
-        <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
-        <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.js"></script> 
-      
-        <!-- PLUGINS -->
-        <script src="/assets/plugins/select2/select2.min.js"></script>
-        <script type="text/javascript" src="/assets/js/send-data.js"></script>
-        <script type="text/javascript" src="/assets/js/wow.min.js"></script>
-
-        <script>
-              new WOW().init();
-              </script>
-
-
-        <!-- setting -->
-        <script type="text/javascript" src="/assets/js/general.js"></script>
 
         
 </body>
