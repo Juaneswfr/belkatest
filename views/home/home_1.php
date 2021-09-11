@@ -9,7 +9,7 @@
                 </figure>
             </div>
 
-            <script src="https://www.google.com/recaptcha/api.js?render=6LeoyzsaAAAAAKMufPCh7Js18n3y8v9xjQCSFgrB"></script>
+            <script src="https://www.google.com/recaptcha/api.js?render=6LcwP1wcAAAAAJ-BuprsvSdoRR_xEQ79n2nyqLAj"></script>
             <div class="col-12 col-md-6 position-relative ">
                 <div class="form-container  bg-yellow animated fadeIn">
                     <div class="wrap_title">
@@ -60,7 +60,7 @@
                             
                             <script>
                             grecaptcha.ready(function() {
-                                grecaptcha.execute('6LeoyzsaAAAAAKMufPCh7Js18n3y8v9xjQCSFgrB', {action: 'homepage'}).then(function(token) {
+                                grecaptcha.execute('6LcwP1wcAAAAAJ-BuprsvSdoRR_xEQ79n2nyqLAj', {action: 'homepage'}).then(function(token) {
                                     document.getElementById("token").value= token;
                                 });
                             });</script>
