@@ -64,25 +64,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
         gtag('config', 'G-HL9MT5LPW2');
         </script>
 
-        <!-- javascript libraries / javascript files set #1 --> 
-        <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
-        <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.js"></script> 
+
       
-        <!-- PLUGINS -->
-        <script src="/assets/plugins/select2/select2.min.js"></script>
-        <script src="https://kit.fontawesome.com/484506fb6d.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="/assets/js/send-data.js"></script>
-        <script type="text/javascript" src="/assets/js/wow.min.js"></script>
-
-        <script>
-            new WOW().init();
-        </script>
-
-
-        <!-- setting -->
-        <script type="text/javascript" src="/assets/js/general.js"></script>
+  
 
 
         
@@ -107,8 +91,29 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
 
         ?>
 
+        <!-- javascript libraries / javascript files set #1 --> 
+        <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+        <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.js"></script> 
 
-        
+        <!-- PLUGINS -->
+        <script src="/assets/plugins/select2/select2.min.js"></script>
+        <script src="https://kit.fontawesome.com/484506fb6d.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/assets/js/send-data.js"></script>
+        <script type="text/javascript" src="/assets/js/wow.min.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
+
+
+        <!-- setting -->
+        <script type="text/javascript" src="/assets/js/general.js"></script>
+        <script>
+
+            document.title = '<?= $title; ?>'
+        </script>
 </body>
 
 

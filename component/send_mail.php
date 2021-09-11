@@ -32,7 +32,7 @@ if (!isset($_POST['curso'])){include_once $_SERVER['DOCUMENT_ROOT'].'/component/
 #=================================================================================================
 #===================================== CODIGO CAPTCHA GOOGLE V3 ==================================
 #=================================================================================================
-
+/*
     $url = "https://www.google.com/recaptcha/api/siteverify";
     $secret = "6LcwP1wcAAAAAKKC-9wEwPa3rWZdV4-DQDgDfsuI" ;
     $response = $_POST['token'];
@@ -53,7 +53,7 @@ if (!isset($_POST['curso'])){include_once $_SERVER['DOCUMENT_ROOT'].'/component/
     $Msg +=  '<br/> El sistema detecto actividad sospechosa <br/> <br/> No se identifico que sea una persona.'; 
     }
 
-  
+  */
 #=================================================================================================
 #=================================================================================================
 #=================================================================================================
