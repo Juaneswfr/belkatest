@@ -1,0 +1,7 @@
+
+User-agent: *
+Disallow: 
+Disallow: /mail
+Disallow: /component
+Disallow: /config
+Sitemap: https://test-mas-que-partners.herokuapp.com/sitemap.xml

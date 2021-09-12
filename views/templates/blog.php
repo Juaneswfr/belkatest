@@ -1,18 +1,18 @@
 <section id="wrap-blog-detail">
-    <div class="container">
-        <article>
+    <div class="container" itemscope itemtype="http://schema.org/Article" >
+        <article itemprop="articleBody">
             <h1>¿Cómo surgieron las fajas y cuál es su relación con el corsé?</h1>
             <figcaption class="lead">
                 <div class="autor">
                     <span>
                         <img src="/assets/media/autor-blog-1.png" alt="">
                     </span>
-                    <div>
-                        <p class="name-autor">Alejandra Giraldo</p>
+                    <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <p itemprop="name" class="name-autor">Alejandra Giraldo</p>
                         <p>Dir Ecosistema Digital</p>
                     </div>
                 </div>
-                <small>11 de Septiembre 2021</small>
+                <small itemprop="datePublished" content="2021-09-11">11 de Septiembre 2021</small>
             </figcaption>
             <p>
             Las fajas han sido la respuesta para moldear el cuerpo tanto de mujeres como de hombres.
@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-md-6 col-12">
                     <figure  class="image-container wow animated fadeIn">
-                        <img src="/assets/media/main-blog-1.jpg" crossorigin="anonymous" alt="Imagen ¿De qué estaban hechos los corsé?"  width="100%" height="auto">
+                        <img itemprop="image" src="/assets/media/main-blog-1.jpg" crossorigin="anonymous" alt="Imagen ¿De qué estaban hechos los corsé?"  width="100%" height="auto">
                     </figure>
                 </div>
             </div>

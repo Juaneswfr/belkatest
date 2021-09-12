@@ -5,6 +5,7 @@
 ?>
 <!doctype html>
     <html lang="en">
+    <meta charset="UTF-8"/>
 
     <?php include $_SERVER['DOCUMENT_ROOT'].'/mail/layout/head.php';?>
 

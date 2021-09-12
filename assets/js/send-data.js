@@ -17,6 +17,12 @@ $(function() {
                     data: form,
                     type: "POST",
                     url:"/send_data",
+                    beforeSend: function() {
+                        $('#loader').show();
+                     },
+                     complete: function(){
+                        $('#loader').hide();
+                     },
                     success: function(data){
                         data=JSON.parse(data); 
                         $("#modalAlertContent").html( data.Msg);    

@@ -69,8 +69,10 @@ header nav .nav-item{margin: 0px 10px;}
 .form-home .form-control{border-radius: 0; border: 0; border-bottom: 1px solid #999;}
 .form-home .form-control.error{border-bottom: 1px solid red;}
 .form-home .form-control:focus{box-shadow: unset; border-bottom: 1px solid var(--bg-color1);}
-.form-home  button{width: 100%; background: var(--bg-color2); border-top-left-radius: 0;border-top-right-radius: 0; font-size: 1.4rem; font-weight: 700; padding:1rem; color:white ; margin: 0;}
-.form-home  button:hover{color: var(--bg-color1); background:black;}
+.form-home button{width: 100%; background: var(--bg-color2); border-top-left-radius: 0;border-top-right-radius: 0; font-size: 1.4rem; font-weight: 700; padding:1rem; color:white ; margin: 0;}
+.form-home button #loader{display: none;}
+.form-home button #loader i{color: white;}
+.form-home button:hover{color: var(--bg-color1); background:black;}
 
 .form-home .form-control.error ~ .select2-container{border-bottom: 1px solid red;}
 .form-home .select2-selection{ border :0 ;border:0;; border-radius: 0;}

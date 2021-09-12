@@ -9,7 +9,7 @@
                 </figure>
             </div>
 
-            <script async src="https://www.google.com/recaptcha/api.js?render=6LcwP1wcAAAAAJ-BuprsvSdoRR_xEQ79n2nyqLAj"></script>
+            <script src="https://www.google.com/recaptcha/api.js?render=6LcwP1wcAAAAAJ-BuprsvSdoRR_xEQ79n2nyqLAj"></script>
             <div class="col-12 col-lg-6 position-relative ">
                 <div class="form-container  bg-yellow animated fadeIn">
                     <div class="wrap_title">
@@ -56,14 +56,14 @@
                                     </div>
                             </div>
                             <input name="token" type="hidden" id="token"/>
-                            <button type="submit" class="btn mb-2"> COMIENZA AHORA</button>
-                            
+                            <button type="submit" class="btn mb-2"> COMIENZA AHORA <span id="loader"><i class="fas fa-spinner fa-pulse"></i></span></button>
                             <script>
                             grecaptcha.ready(function() {
                                 grecaptcha.execute('6LcwP1wcAAAAAJ-BuprsvSdoRR_xEQ79n2nyqLAj', {action: 'homepage'}).then(function(token) {
                                     document.getElementById("token").value= token;
                                 });
                             });</script>
+                         
 
                         </form>
                     </div>
