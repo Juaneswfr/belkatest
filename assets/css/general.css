@@ -82,7 +82,7 @@ header nav .nav-item{margin: 0px 10px;}
 
 
 /*MESSAGE ALERT FORM NEWSLETTER REGISTER*/
-
+.modal-alert-custom .modal-content{border: 1px solid black;}
 .modal-alert-custom .modal-header{border-bottom: 0; background-color: black;}
 .modal-alert-custom .modal-body{border-bottom: 0; background-color: black;}
 .modal-alert-custom .modal-body *{color: white;}
