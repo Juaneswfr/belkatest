@@ -74,10 +74,11 @@
                 solo para estilizar la figura, sino que a su vez es recomendada por profesionales de la salud
                 para cuidados posquirúrgicos, posparto y para corregir la postura.</p>
                 </div>
-
-                <p>Con toda la información que aquí te contamos seguro estarás mucho más confiado de tener la
-                tuya. Conoce cuál es la <a href="https://www.fajasfajitex.com/" target="_blank">faja ideal para ti en nuestra Tienda Online</a>  y comienza tu también a
-                construir historia.</p>
+                <div class="col">
+                    <p>Con toda la información que aquí te contamos seguro estarás mucho más confiado de tener la
+                    tuya. Conoce cuál es la <a href="https://www.fajasfajitex.com/" target="_blank">faja ideal para ti en nuestra Tienda Online</a>  y comienza tu también a
+                    construir historia.</p>
+                </div>
             </div>
 
         </article>

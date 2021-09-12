@@ -26,12 +26,15 @@ email:     	juanestebanramirezavila@gmail.com
 /*************************
         -MAIN-
 **************************/
+body{overflow-x: hidden;}
 *{font-family: 'Rubik', sans-serif; color:#222;}
-p{font-size: 1.5rem;}
+p{font-size: 1.4rem;}
 a{color: var(--bg-color1);}
 a:hover{text-decoration: unset; color: var(--bg-color1);}
+.navbar-brand-responsive{display: none;}
 
 .bg-yellow{background: linear-gradient(45deg, var(--bg-color3), var(--bg-color1))}
+.bg-gray{background-color:#f6f6f6;}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {-webkit-appearance: none;margin: 0;}
@@ -49,6 +52,7 @@ header nav .nav-item{margin: 0px 10px;}
 .main-logo img{max-width: 320px;}
 .link_login{padding: .5rem; border-radius: 3px; border: 1px solid black; margin-left: 20px; transition: .4s all;}
 .link_login:hover{background: var(--bg-color2); color: white !important; border-color: var(--bg-color2);}
+.navbar-toggler-icon{display: flex; align-items: center; justify-content: center;}
 
 /* TITLES */
 .wrap_title h2{text-transform: initial;font-weight:700; font-size: 2.5rem; margin: 0;}
@@ -86,12 +90,16 @@ header nav .nav-item{margin: 0px 10px;}
 .modal-alert-custom .modal-body span i{color: var(--bg-color1); font-size: 8rem;}
 
 /* HOME SECTION LETS GO*/
-#wrap_courses{position: relative; padding: 4rem 0px;}
+#wrap_courses{position: relative; padding: 4rem 10px;}
+#wrap_courses .container-container-item{padding-top: 160px;}
+#wrap_courses .container-item{ position: absolute; height: auto; z-index: 1; padding: 2rem;width: 100%;}
+#wrap_courses::before{position: absolute; content: ''; background: white; width: 50vw; bottom: 0; z-index: 1;right: 0; height: 10%;bottom: -10%;}
+#wrap_courses .our-courses{margin-top: 200px;}
 #wrap_courses .container-item .item{background-color: transparent; transition: .4s all;padding: 1rem;}
 #wrap_courses .container-item .item:hover{background-color: var(--bg-color2); transition: .4s all; border-radius: 10px; overflow: hidden; box-shadow: 3px 1px 12px 4px #57595a69;}
 #wrap_courses .container-item .item .container-icon{background-color: var(--bg-color1);padding: 20px 10px;transform: skewX(350deg);border-radius: 25px; transition: .4s all;    max-width: 90%;margin: auto;}
 #wrap_courses .container-item .item:hover .container-icon{background-color: var(--bg-color2);padding: 20px 10px;transform: skewX(350deg);border-radius: 25px; transition: .4s all;}
-#wrap_courses .container-item .item figcaption .title-item{font-weight: 700; font-size: 1.4rem; text-align: center; transition: .4s all;}
+#wrap_courses .container-item .item figcaption .title-item{font-weight: 700; font-size: 1rem; text-align: center; transition: .4s all;}
 #wrap_courses .container-item .item figcaption span{text-align: center; transition: .4s all;}
 #wrap_courses .container-item .item:hover figcaption .title-item{color: white;}
 #wrap_courses .container-item .item:hover figcaption span{color: white;}
@@ -101,18 +109,41 @@ header nav .nav-item{margin: 0px 10px;}
 #wrap_courses .container-item .item:hover .container-icon .svg-icon path{fill: white;}
 
 
-/* HOME SECTION BLOG*/
 
+/* HOME SECTION LETS GO*/
+#wrap_courses{position: relative; }
+
+#wrap-our-partners {padding: 5rem 10px;}
+#wrap-our-partners .container-image img{width: 100%;}
+#wrap-our-partners .container-250{display: flex;}
+#wrap-our-partners .container-250 img{width: 100%; margin: auto;}
+#wrap-our-partners .container-logos{ display: flex; justify-content: space-between;  align-items: center;}
+#wrap-our-partners .item-logo{display: flex;height: 100px; justify-content: center; align-items: center; margin: 10px 20px;}
+#wrap-our-partners .item-logo img{width:100% ; max-width: 250px;}
+#wrap-our-partners .item-logo.patata{ height: 150px;}
+
+#wrap-testimonials {padding: 5rem 10px;}
+#wrap-testimonials .paragraph{padding: 2rem 3rem; border-radius: 10px; background-color: var(--bg-color1);}
+#wrap-testimonials .lead .autor span img{max-width: 150px;}
+#wrap-testimonials .lead .autor div{max-width: calc( 100% - 150px); padding-left: 20px;}
+#wrap-testimonials .lead .autor .name-autor{font-size: 2rem;}
+#wrap-testimonials .lead .autor p{font-size: 1.4rem;}
+#wrap-testimonials .container-owl .owl{display: flex; border: 1px solid black; padding: 2px; border-radius: 50%; width: 30px; height: 30px; margin-bottom: 10px; position: relative; justify-content: center; align-items: center;}
+#wrap-testimonials .container-owl .owl.active::after{content: ''; background-color: var(--bg-color1); width: 90%; height: 90%; border-radius: 50%;}
+
+/* HOME SECTION BLOG*/
+#wrap-blog {padding: 5rem 10px;}
 #wrap-blog .wrap_title{margin-bottom: 5rem;}
-#wrap-blog .item{display: flex; overflow: hidden; border-radius: 15px; background: #f1f0f0;}
-figcaption.lead{padding: 10px 20px;}
-figcaption.lead{ margin-bottom: 10px;}
-figcaption.lead .autor{display: flex; flex-wrap: wrap; align-items: center; padding: 10px; flex-wrap: wrap;} 
-figcaption.lead .autor span img{max-width: 36px;}
-figcaption.lead .autor div{width:calc(100% - 40px); padding-left: 10px;}
-figcaption.lead .autor .name-autor{font-size: .8rem; font-weight: 700;}
-figcaption.lead p{font-size: .8rem; margin: 0;font-weight: 400;}
-figcaption.lead small{text-align: right; display: block; font-size: .8rem; font-style: italic; margin-bottom: 1rem;}
+#wrap-blog .item{display: flex; overflow: hidden; border-radius: 15px; background: #f1f0f0; margin-bottom: 50px;}
+#wrap-blog .item figure{ width: 100%;}
+.lead{padding: 10px 20px;}
+.lead{ margin-bottom: 10px;}
+.lead .autor{display: flex; flex-wrap: wrap; align-items: center; padding: 10px; flex-wrap: wrap;} 
+.lead .autor span img{max-width: 36px;}
+.lead .autor div{width:calc(100% - 40px); padding-left: 10px;}
+.lead .autor .name-autor{font-size: .8rem; font-weight: 700;}
+.lead p{font-size: .8rem; margin: 0;font-weight: 400;}
+.lead small{text-align: right; display: block; font-size: .8rem; font-style: italic; margin-bottom: 1rem;}
 #wrap-blog .item h3{font-weight: 700; font-size: 1.3rem;}
 #wrap-blog .item .container-image img{width: 100%; height: 270px; object-fit: cover;border-radius: 15px;}
 
@@ -123,8 +154,8 @@ figcaption.lead small{text-align: right; display: block; font-size: .8rem; font-
 #wrap-blog .item .opacity .opacity-text::before{content: '+'; font-weight: 700; top: -15px; left: 100%; position: absolute;}
 
 /* HOME SECTION NEWSLETTER*/
-#wrap-newsletter{background: white url('/assets/media/back-newsletter.png') no-repeat center / 100% ; padding: 5rem 20px;  display: flex; justify-content: center; align-items: center;}
-#wrap-newsletter .container{padding: 300px 0;}
+#wrap-newsletter{background: white url('/assets/media/back-newsletter.png') no-repeat center / 100% ; padding: 5rem 15px; padding-top: 0;  display: flex; justify-content: center; align-items: center;}
+#wrap-newsletter .container{padding: 150px 0;}
 #wrap-newsletter .container .container-form{max-width: 500px; margin: auto; padding: 10px 20px; background:var(--bg-color1); border-radius: 10px;}
 
 #wrap-newsletter .container-form .form-control{border-radius: 0; border: 0; border-bottom: 0; background: transparent; font-size: 1.3rem; font-style: italic;}
@@ -137,11 +168,11 @@ figcaption.lead small{text-align: right; display: block; font-size: .8rem; font-
 
 /* Footer */
 footer{background-color: black;}
-footer{ padding: 4rem 4rem; }
+footer{ padding: 4rem 15px; }
 footer p{color: white;}
-footer .main_link{ font-size: 1.4rem; font-weight: 700; display: flex; margin-bottom: 5rem;   width: max-content;}
+footer .main_link{ font-size: 1.4rem; font-weight: 700; display: flex; margin-bottom: 5rem;  }
 footer .footer-list{ list-style-type: none; padding: 0;}
-footer .footer-list li a{color: white; margin: 10px 0; display: flex; font-size: 1.4rem;    width: max-content;}
+footer .footer-list li a{color: white; margin: 10px 0; display: flex; font-size: 1.4rem;   }
 
 /*************************
         -BLOG-
@@ -156,3 +187,109 @@ footer .footer-list li a{color: white; margin: 10px 0; display: flex; font-size:
 #wrap-blog-detail .lead{padding: 0;}
 #wrap-blog-detail .lead .name-autor{font-weight: 600;}
 #wrap-blog-detail .image-container img{border-radius: 5px;}
+
+
+@media (max-width: 1200px){
+
+        #wrap_lets_go::before{    height: 52%;bottom: -52%;}
+
+        #wrap_courses .our-courses{margin-top: 100px;}
+        #wrap_courses .container-container-item{padding-top: 300px;}
+        #wrap_courses::before{    height: 5%;bottom: -5%;}
+        #wrap_courses .container-item .item figcaption .title-item{font-size: .9rem;}
+
+        #wrap-newsletter .container{padding: 15px 0px;}
+
+}
+@media (max-width: 990px){
+
+        .navbar-brand-responsive{display: flex; width: 100%;}
+        .navbar-brand-responsive img{margin: auto;}
+        .navbar-toggler{z-index: 6; position: fixed; right: 20px; background-color: var(--bg-color1); border-radius: 10px;}
+        header nav.navbar{position: unset;}
+        #navbar-header{ flex-wrap:wrap; position: fixed;height: 0;top: 0;overflow: hidden;width: 100%;left: 0; transition: .4s all; background-color:#ffef20c9;z-index: 5; display: flex; align-items: center;}
+        #navbar-header.show{height: 100vh; align-items: stretch;}
+        .navbar-nav{margin: 0 !important;    width: 100%;}
+        header nav .nav-item .nav-link:not(.link_login){padding: 15px 10px; border-bottom: 1px solid black;}
+
+        .link_login{background-color: white; border: 1px solid white; color: var(--bg-color2); margin: 0; margin-top: 30px; padding: 15px 10px;  text-align: center;}
+
+        .main-logo img{max-width: 250px;}
+        .container-person{margin: auto;}
+        .container-person img{max-width: 360px;}
+        #wrap_lets_go .form-container{position: relative; padding: 3rem 15px;}
+        
+        #wrap_lets_go::before{height: 50px; bottom: -50px;}
+
+        #wrap_courses .our-courses{margin-top: 200px;}
+        #wrap_courses .container-item{position: relative;}
+        #wrap_courses .container-container-item{padding-top: 0;}
+        #wrap_courses .container-item .item .container-icon .svg-icon{max-width: 100px;}
+
+        #wrap_courses::before{height: 50px; bottom: -50px;}
+
+        #wrap-our-partners .container-250{ margin-bottom: 35px;}
+        #wrap-our-partners .container-250 img{max-width: 240px;}
+
+
+        #wrap-testimonials .lead{ width: 100%;}
+        #wrap-testimonials .container-owl{ display: flex; justify-content: center; width: 100%;}
+        #wrap-testimonials .lead .autor div{width: auto;}
+        #wrap-testimonials .lead .autor{justify-content: center;}
+        #wrap-testimonials .container-owl .owl{ margin:10px;}
+
+
+        footer .main_link{margin-bottom: 15px;}
+        footer .footer-list li a{border-bottom: 1px solid white; padding: 20px 0; }
+
+}
+@media (max-width: 767px){
+        #wrap-our-partners .container-logos{flex-wrap: wrap;    justify-content: center;}
+        #wrap_courses .our-courses{margin-top: 25px; position: relative;}
+        .wrap_title h2{font-size: 2rem;}
+        p{font-size: 1rem;}
+        .wrap_title span.arrow{transform: rotate(90deg);position: absolute;bottom: -70px;display: flex;width: 85px;right: 0;}
+
+        #wrap-testimonials .lead .autor .name-autor{font-size: 1.4rem;text-align: center;}
+        #wrap-testimonials .lead .autor p{font-size: 1rem;text-align: center;}
+        #wrap-testimonials .lead .autor div{max-width: 100%;}
+
+        #wrap-blog{padding-bottom:  1rem;}
+        #wrap-newsletter{padding-bottom: 1rem;}
+        #wrap-newsletter .container-form button{font-size: 1rem;}
+
+        #wrap-our-partners .item-logo img{max-width: 180px;}
+        #wrap-our-partners .item-logo.patata{height: 100px;}
+
+
+        #wrap_lets_go .form-container{padding-top: 1rem;}
+        #wrap-testimonials{padding-top: 3rem;}
+        #wrap-blog{padding-top:3rem;}
+        #wrap_links_footer div{ width: 100%; margin-top: 30px !important;}
+        footer .main_link{font-size: 1.2rem;}
+        footer .footer-list li a{font-size: 1.2rem;}
+        footer{padding-bottom:2rem;}
+
+        
+        #wrap_links_footer div p{text-align: center;}
+        #wrap_links_footer a{margin: auto;}
+
+
+        #wrap-blog-detail h1{font-size: 2rem;}
+        #wrap-blog-detail h2{font-size: 1.5rem;}
+        #wrap-blog-detail p{font-size: 1rem;}
+}
+
+@media (max-width: 575px){
+
+        .main-logo img{max-width: 200px;}
+
+        #wrap-testimonials .lead .autor span{width: 100%;display: flex;}
+        #wrap-testimonials .lead .autor span img{margin: auto;}
+        #wrap-testimonials .lead .autor div{width: 100%;}
+
+        #wrap-blog-detail h1{font-size: 1.7rem; text-align: center;}
+        #wrap-blog-detail h2{font-size: 1.2rem; text-align: center}
+        #wrap-blog-detail p{font-size: 1rem; }
+
+}

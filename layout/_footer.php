@@ -1,7 +1,7 @@
 <footer>
     <section id="wrap_info_footer" class="container container-center">
         <div class="row">
-            <div class="col-12 col-sm-3">
+            <div class="col-12 col-lg-3">
                 <a class="main_link" data-toggle="collapse" href="#footerMenu1" role="button" aria-expanded="false" aria-controls="footerMenu1">
                     Sobre Nosotros
                 </a>
@@ -21,7 +21,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-sm-3">
+            <div class="col-12 col-lg-3">
                 <a class="main_link" data-toggle="collapse" href="#footerMenu2" role="button" aria-expanded="false" aria-controls="footerMenu1">
                     Cursos
                 </a>
@@ -48,7 +48,7 @@
                 </div>
 
             </div>
-            <div class="col-12 col-sm-3 ">
+            <div class="col-12 col-lg-3 ">
                 <a class="main_link" data-toggle="collapse" href="#footerMenu3" role="button" aria-expanded="false" aria-controls="footerMenu1">
                     Contácto
                 </a>
@@ -68,7 +68,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-sm-3">
+            <div class="col-12 col-lg-3">
                 <a class="main_link" data-toggle="collapse" href="#footerMenu4" role="button" aria-expanded="false" aria-controls="footerMenu1">
                     Recursos
                 </a>
@@ -96,7 +96,7 @@
         <a class="main-logo wow animated fadeIn" href="/">
             <img src="/assets/media/logo-yellow.png" alt="Más que partners">
         </a>
-        <div class="ml-auto">
+        <div class="ml-auto mt-3">
 
             <p>Todos los derechos reservados <a class="link" href="masquepartners.com">masquepartners.com</a></p>
         </div>

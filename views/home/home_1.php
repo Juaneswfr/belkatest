@@ -3,14 +3,14 @@
 <section id="wrap_lets_go" class="bg-yellow" >
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 center-col">
+            <div class="col-12 col-lg-6 center-col d-flex align-item-end">
                 <figure class="container-person animated bounceInLeft">
                     <img src="/assets/media/persona-1.png" alt="Vista previa de archivo svg">
                 </figure>
             </div>
 
             <script src="https://www.google.com/recaptcha/api.js?render=6LcwP1wcAAAAAJ-BuprsvSdoRR_xEQ79n2nyqLAj"></script>
-            <div class="col-12 col-md-6 position-relative ">
+            <div class="col-12 col-lg-6 position-relative ">
                 <div class="form-container  bg-yellow animated fadeIn">
                     <div class="wrap_title">
                         <h2 class="text-center font-weight-bold mb-5">Comencemos juntos<br> tu formación</h2>
@@ -79,6 +79,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 position-relative ">
+                
                 <div class="wrap_title">
                     <h2 class="text-left font-weight-bold mb-5">Nunca paramos<br> de aprender</h2>
                 </div>
@@ -86,20 +87,21 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quae, unde obcaecati expedita arum qui! Natus voluptatem dolorum dolorem repellendus eum pariatur. Atque laudantium enim et. Ex, incidunt architecto. Temporibus neque nihil eveniet quisquam saepe totam commodi ad esse.</p>
                 </div>
-
-                <div class="wrap_title mt-5  mb-5">
-                    <h2 class="text-left font-weight-bold">Nuestros Cursos</h2>
-                    <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 54"><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path d="M82,54c-4-4.15-4-5.21.09-9.37L95.21,31.4H89.1c-27.11,0-54.22.06-81.33-.11C5.17,31.28,2.59,29.8,0,29V25c2.61-.71,5.22-2,7.84-2,28.71-.15,57.42-.09,87.6-.09-4.92-4.9-9-9-13.15-13.1C78,5.46,78,4.5,82,0h2c1.62,1.39,3.32,2.7,4.84,4.19C95.92,11.1,103,18.06,110,25v4L85,54Z"/></g></g></svg></span>
-                </div>
-                <div class="paragrahp">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quae, unde obcaecati expedita arum qui! Natus voluptatem dolorum dolorem repellendus eum pariatur. Atque laudantium enim et. Ex, incidunt architecto. Temporibus neque nihil eveniet quisquam saepe totam commodi ad esse.</p>
+                <div class="our-courses">
+                    <div class="wrap_title mt-5  mb-5">
+                        <h2 class="text-left font-weight-bold">Nuestros Cursos</h2>
+                        <span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 54"><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path d="M82,54c-4-4.15-4-5.21.09-9.37L95.21,31.4H89.1c-27.11,0-54.22.06-81.33-.11C5.17,31.28,2.59,29.8,0,29V25c2.61-.71,5.22-2,7.84-2,28.71-.15,57.42-.09,87.6-.09-4.92-4.9-9-9-13.15-13.1C78,5.46,78,4.5,82,0h2c1.62,1.39,3.32,2.7,4.84,4.19C95.92,11.1,103,18.06,110,25v4L85,54Z"/></g></g></svg></span>
+                    </div>
+                    <div class="paragrahp">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quae, unde obcaecati expedita arum qui! Natus voluptatem dolorum dolorem repellendus eum pariatur. Atque laudantium enim et. Ex, incidunt architecto. Temporibus neque nihil eveniet quisquam saepe totam commodi ad esse.</p>
+                    </div>
                 </div>
             </div>        
-            <div class="col-12 col-md-6 position-relative "  style="padding-top:150px;">
+            <div class="col-12 col-md-6 position-relative container-container-item">
      
                 <div class="row container-item">
-                    <div class="col-6 col-md-6">
+                    <div class="col-12  col-sm-6 col-md-12 col-lg-6">
                         <figure class="item wow animated bounceInRight">
                             <div class="container-icon">
                                 <span class="svg-icon">
@@ -113,7 +115,7 @@
                         </figure>                    
                     </div>
 
-                    <div class="col-6 col-md-6">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6">
                         <figure class="item wow animated bounceInRight">
                             <div class="container-icon">
                                 <span class="svg-icon">
@@ -127,7 +129,7 @@
                         </figure>                    
                     </div>
 
-                    <div class="col-6 col-md-6">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6">
                         <figure class="item wow animated bounceInRight">
                             <div class="container-icon">
                                 <span class="svg-icon">
@@ -142,7 +144,7 @@
                         </figure>                    
                     </div>
 
-                    <div class="col-6 col-md-6">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6">
                         <figure class="item wow animated bounceInRight">
                             <div class="container-icon">
                                 <span class="svg-icon">
@@ -156,7 +158,7 @@
                         </figure>                    
                     </div>
 
-                    <div class="col-6 col-md-6">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6">
                         <figure class="item wow animated bounceInRight">
                             <div class="container-icon">
                                 <span class="svg-icon">
@@ -170,7 +172,7 @@
                         </figure>                    
                     </div>
 
-                    <div class="col-6 col-md-6">
+                    <div class="col-12 col-sm-6 col-md-12 col-lg-6">
                         <figure class="item wow animated bounceInRight">
                             <div class="container-icon">
                                 <span class="svg-icon">
@@ -279,6 +281,78 @@
     </div>
 </section>
 
+<section id="wrap-our-partners" class="bg-yellow">
+    <div class="container">
+        <div class="wrap_title mb-5">
+            <h2 class="text-left font-weight-bold">Nuestros Partners</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="row  mb-5">
+                    <div class="col-12 position-relative ">                
+                        <a class="container-image" href="#openVideo">
+                            <img src="/assets/media/our-video.png" alt="Nuestros Partners">
+                        </a>
+                    </div>        
+                </div>
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-6 position-relative">            
+                        <figure class="container-250">
+                            <img src="/assets/media/250.png" alt="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam numquam dolore vero doloribus, omnis velit!">
+                        </figure>
+                    </div>
+                    <div class="col-12 col-lg-6 position-relative">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam numquam dolore vero doloribus, omnis velit!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatum quos atque aut voluptas nemo, veniam eum repudiandae odio suscipit molestiae sapiente itaque.</p>            
+                    </div>
+                </div>
+                <div class="container-logos">
+                    <a href="https://hiuvy.com/" target="_blank" class="item-logo"><img src="/assets/media/hiuvy-logo.png" alt="Hiuvy Digital"></a>
+                    <a href="https://www.belkacompany.com/" target="_blank"  class="item-logo"><img src="/assets/media/belka-logo.png" alt="Belka Company"></a>
+                    <a href="https://www.patatastudio.com/" target="_blank"  class="item-logo patata"><img src="/assets/media/patata-logo.png" alt="PAtata Studio"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="wrap-testimonials" class="bg-gray">
+    <div class="container">
+        <div class="wrap_title mb-5">
+            <h2 class="text-center font-weight-bold mb-5">Testimonios</h2>
+            <h3 class="text-center">Lorem ipsum dolor sit amet.</h3>
+        </div>
+        <article class="row">
+            <div class="col-12 col-lg-6 position-relative ">                
+                <div class="paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing rerum facilis?</p>
+                    <p>Voluptatum magnam dolor nihil, dolore libero, provident quos non magni cupiditate mollitia facere? Sit, consequuntur necessitatibus adipisci sint labore ex quibusdam. Exercitationem.</p>
+                </div>
+            </div>        
+            <div class="col-12 col-lg-6 position-relative d-flex flex-wrap align-items-center">
+                <div class="lead">
+                    <div class="autor">
+                        <span>
+                            <img src="/assets/media/testimonials-1.png" alt="Tomas Aria">
+                        </span>
+                        <div>
+                            <p class="name-autor">Tomas Aria</p>
+                            <p>Emprendedora</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-owl">
+                    <div class="owl"></div>
+                    <div class="owl active"></div>
+                    <div class="owl"></div>
+                    <div class="owl"></div>
+                </div>
+            
+            </div>
+
+        </article>
+    </div>
+</section>
 
 <section id="wrap-blog">
     <div class="container">
@@ -297,7 +371,7 @@
             for ($i = 0; $i < 3; $i++) {
                 $xmlArray = $xml->channel->item[$i];
             ?>
-            <div class="col-md-4">
+            <div class="col-12 col-lg-4">
                 <a href="<?= $xmlArray->link ?>" target="_blank" class="item">
                     <figure>
                         <div class="container-image">
@@ -343,10 +417,10 @@
         <div class="container-form">
             <form action="/newsletter">
                 <div class="row align-items-center">
-                    <div class="col-8">
+                    <div class="col-12 col-sm-8 mb-3 mb-sm-3">
                         <input type="text" class="form-control" name="email" placeholder="Correo electrónico">
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-4">
                         <button type="submit" class="btn mb-2"><span></span> Suscríbete</button>
                     </div>
                 </div>
