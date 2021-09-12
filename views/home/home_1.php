@@ -291,7 +291,7 @@
                 <div class="row  mb-5">
                     <div class="col-12 position-relative ">                
                         <a class="container-image" href="#openVideo">
-                            <img src="/assets/media/our-video.webp" alt="Nuestros Partners">
+                            <img src="/assets/media/our-video.webp" width="100%" height="auto" alt="Nuestros Partners">
                         </a>
                     </div>        
                 </div>
@@ -333,7 +333,7 @@
                 <div class="lead">
                     <div class="autor">
                         <span>
-                            <img src="/assets/media/testimonials-1.png" alt="Tomas Aria">
+                            <img src="/assets/media/testimonials-1.webp" width="100%" height="auto" alt="Tomas Aria">
                         </span>
                         <div>
                             <p class="name-autor">Tomas Aria</p>
@@ -375,7 +375,7 @@
                 <a href="<?= $xmlArray->link ?>" target="_blank" class="item">
                     <figure>
                         <div class="container-image">
-                            <img src="/assets/media/blog-<?=$i?>.jpg" width="auto" height="auto" alt="<?= $xmlArray->title ?> " class="ls-is-cached lazyloaded">
+                            <img src="/assets/media/blog-<?=$i?>.webp" width="100%" height="auto" alt="<?= $xmlArray->title ?> " class="ls-is-cached lazyloaded">
                             <div class="opacity">
                                 <div class="opacity-text">
                                     Ver

@@ -155,7 +155,7 @@ header nav .nav-item{margin: 0px 10px;}
 #wrap-blog .item .opacity .opacity-text::before{content: '+'; font-weight: 700; top: -15px; left: 100%; position: absolute;}
 
 /* HOME SECTION NEWSLETTER*/
-#wrap-newsletter{background: white url('/assets/media/back-newsletter.png') no-repeat center / 100% ; padding: 5rem 15px; padding-top: 0;  display: flex; justify-content: center; align-items: center;}
+#wrap-newsletter{background: white url('/assets/media/back-newsletter.webp') no-repeat center / 100% ; padding: 5rem 15px; padding-top: 0;  display: flex; justify-content: center; align-items: center;}
 #wrap-newsletter .container{padding: 150px 0;}
 #wrap-newsletter .container .container-form{max-width: 500px; margin: auto; padding: 10px 20px; background:var(--bg-color1); border-radius: 10px;}
 

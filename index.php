@@ -37,7 +37,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
 
 
         <!-- Bootstrap --> 
-        <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css" />
 
         <!-- animation --> 
         <link rel="stylesheet" href="/assets/css/animate.css" />
@@ -95,7 +95,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
         <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
-        <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.js"></script> 
+        <script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
 
         <!-- PLUGINS -->
         <script src="/assets/plugins/select2/select2.min.js"></script>
