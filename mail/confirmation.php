@@ -27,7 +27,7 @@
                                         <tr>
                                             <td class="o_bb-primary" height="40" width="32">&nbsp; </td>
                                             <td rowspan="2" class="o_sans o_text o_text-secondary o_px o_py" align="center">
-                                                <img src="<?= $main_url ?>/assets/media/email-icon-success.png" width="120" height="auto" alt="" style="max-width:48px;">
+                                                <img src="<?= $main_url ?>assets/media/email-icon-success.png" width="120" height="auto" alt="" style="max-width:48px;">
                                             </td>
                                             <td class="o_bb-primary" height="40" width="32">&nbsp; </td>
                                         </tr>

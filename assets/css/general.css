@@ -55,7 +55,8 @@ header nav .nav-item{margin: 0px 10px;}
 .navbar-toggler-icon{display: flex; align-items: center; justify-content: center;}
 
 /* TITLES */
-.wrap_title h2{text-transform: initial;font-weight:700; font-size: 2.5rem; margin: 0;}
+.wrap_title h2,
+.wrap_title h1{text-transform: initial;font-weight:700; font-size: 2.5rem; margin: 0;}
 .wrap_title span.arrow {display: block; text-align: right;}
 .wrap_title span.arrow svg{max-width: 100px;}
 
@@ -97,7 +98,7 @@ header nav .nav-item{margin: 0px 10px;}
 #wrap_courses .our-courses{margin-top: 200px;}
 #wrap_courses .container-item .item{background-color: transparent; transition: .4s all;padding: 1rem;}
 #wrap_courses .container-item .item:hover{background-color: var(--bg-color2); transition: .4s all; border-radius: 10px; overflow: hidden; box-shadow: 3px 1px 12px 4px #57595a69;}
-#wrap_courses .container-item .item .container-icon{background-color: var(--bg-color1);padding: 20px 10px;transform: skewX(350deg);border-radius: 25px; transition: .4s all;    max-width: 90%;margin: auto;}
+#wrap_courses .container-item .item .container-icon{background-color: var(--bg-color1);padding: 20px;  transform: skewX(350deg);border-radius: 25px; transition: .4s all;    max-width: 90%;margin: auto;}
 #wrap_courses .container-item .item:hover .container-icon{background-color: var(--bg-color2);padding: 20px 10px;transform: skewX(350deg);border-radius: 25px; transition: .4s all;}
 #wrap_courses .container-item .item figcaption .title-item{font-weight: 700; font-size: 1rem; text-align: center; transition: .4s all;}
 #wrap_courses .container-item .item figcaption span{text-align: center; transition: .4s all;}
@@ -246,6 +247,7 @@ footer .footer-list li a{color: white; margin: 10px 0; display: flex; font-size:
 @media (max-width: 767px){
         #wrap-our-partners .container-logos{flex-wrap: wrap;    justify-content: center;}
         #wrap_courses .our-courses{margin-top: 25px; position: relative;}
+        .wrap_title h1,
         .wrap_title h2{font-size: 2rem;}
         p{font-size: 1rem;}
         .wrap_title span.arrow{transform: rotate(90deg);position: absolute;bottom: -70px;display: flex;width: 85px;right: 0;}

@@ -99,7 +99,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
 
         <!-- PLUGINS -->
         <script src="/assets/plugins/select2/select2.min.js"></script>
-        <script src="https://kit.fontawesome.com/484506fb6d.js" crossorigin="anonymous"></script>
+        <script async src="https://kit.fontawesome.com/484506fb6d.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="/assets/js/send-data.js"></script>
         <script type="text/javascript" src="/assets/js/wow.min.js"></script>
 

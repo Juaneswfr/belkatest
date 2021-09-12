@@ -94,7 +94,7 @@
     </section>
     <section id="wrap_links_footer" class="container  container-center d-flex flex-wrap justify-content-between align-items-end">
         <a class="main-logo wow animated fadeIn" href="/">
-            <img src="/assets/media/logo-yellow.png" alt="Más que partners">
+            <img src="/assets/media/logo-yellow.webp" alt="Más que partners">
         </a>
         <div class="ml-auto mt-3">
 
