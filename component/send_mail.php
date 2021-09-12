@@ -102,7 +102,7 @@ $message = (new Swift_Message($_POST['nombre'].', Gracias por tu información'))
 // Create a message
 $message_admin = (new Swift_Message('Nuevo lead'))
   ->setFrom(['juanestebanramirezavila@gmail.com' => 'Support - Masquepartners'])
-  ->setTo([ 'juanestebanramirezavila@gmail.com' => 'Masquepartners'])
+  ->setTo([ 'juanestebanramirezavila@gmail.com, ecosistema@belkacompany.com ' => 'Masquepartners'])
   ->setBody($html_admin , 'text/html');
 
 

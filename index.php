@@ -37,15 +37,15 @@ include_once $_SERVER['DOCUMENT_ROOT'].'config/site.php';
 
 
         <!-- Bootstrap --> 
-        <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css" />
+        <link async rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css" />
 
         <!-- animation --> 
-        <link rel="stylesheet" href="/assets/css/animate.css" />
+        <link async rel="stylesheet" href="/assets/css/animate.css" />
 
         <!-- PLUGINS -->
-        <link href="/assets/plugins/select2/select2.min.css" rel="stylesheet" />
+        <link async href="/assets/plugins/select2/select2.min.css" rel="stylesheet" />
         <!-- general -->
-        <link rel="stylesheet" href="/assets/css/general.css" />
+        <link async rel="stylesheet" href="/assets/css/general.css" />
 
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
